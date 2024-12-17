@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آشنایی با css</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f9f9f9;
+        
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+        }
+        table, th, td {
+          border: 1px solid #ccc;
+        }
+        th, td {
+          padding: 10px;
+          text-align: center;
+        }
+        th {
+          background-color: #007BFF;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+        strong {
+            background-color:  #007BFF;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            color: #f9f9f9;
+        }
+      </style>
+</head>
+<body>
+    <h1>آشنایی با css</h1>
+    <strong>CSS (Cascading Style Sheets):</strong><br>
+    <p>
+        css  یک زبان استایل‌دهی است که برای تنظیم ظاهر و طراحی صفحات وب استفاده می‌شود.
+       این زبان به شما امکان می‌دهد تا به عناصر html
+      ظاهر زیبا، موقعیت دلخواه و طراحی پویا بدهید. 
+    </p><br>
+    <strong>ویژگی‌های اصلیcss:</strong>
+    <p>
+        1.جداسازی محتوا از ظاهر:
+        CSSبه شما کمک می‌کند تا ظاهر (استایل) و محتوارا از هم جدا کنید.
+        این امر باعث افزایش خوانایی و مدیریت بهتر کد(html)می شود. <br>
+        2.واکنش‌گرایی (Responsive Design):
+        CSS به شما امکان می‌دهد صفحات وب را برای نمایش مناسب در دستگاه‌های مختلف (موبایل، تبلت و
+        دسکتاپ) طراحی کنید. <br>
+        3.کنترل ظاهر عناصر:
+        CSSبه شما این امکان را می‌دهد که رنگ‌ها، اندازه‌ها، فونت‌ها، موقعیت‌ها و سایر ویژگی‌های ظاهری
+        عناصر html را تغییر دهید. <br>
+        4.قابلیت استفاده مجدد:
+        با نوشتن استایل در یک فایل خارجی، می‌توانید از همان استایل در چندین صفحه استفاده کنید.
+    </p><br>
+    <p>
+    <strong>انواع css:</strong><br>
+    <div>ccرا می‌توان به سه روش مختلف در صفحات وب استفاده کرد:</div><br>
+    <b>(Internal CSS)cssداخلی:</b>
+        استایل ها در داخل تگ &lt;style&gt; و در فایل html تعریف می شود<br>
+        <code>
+         &lt;style&gt;<br>
+         h1 {<br>
+            color:blue;<br>
+            fontz-size:24px;<br>
+         } <br>
+         &lt;/style&gt;
+        </code><br>
+        <br>
+        <b>(Inline CSS)cssدرونی:</b>
+         به صورت مستقیم در تگ های html نوشته می شود. <br>
+         <code>
+            &lt;/h1&gt;سلام &lt;h1 style="color: blue; font-size: 24px&gt;
+         </code><br>
+         <br>
+         <b>(External CSS)cssخارجی:</b>
+         استایل‌ها در یک فایل جداگانه با پسوند css.نوشته شده
+         و به فایل html متصل می‌شوند. <br>
+         <code>
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+         </code>
+    </p><br>
+    <strong>ساختار CSS:</strong>
+    <p>
+        ساختار CSS شامل قوانین (Rules) است که به عناصر HTML استایل می‌دهد. هر قانون CSS از انتخابگرها (Selectors)
+        و اعلان‌ها (Declarations) تشکیل شده است. <br>
+        یاختار کلی درcss: <br>
+        1-انتخابگر (Selector):
+       بخشی که عنصر یا عناصری را که باید استایل داده شوند، مشخص می‌کند . <br>
+     2-ویژگی (Property):
+      خصوصیتی از عنصر که می‌خواهید تغییر دهید (مانند رنگ، اندازه، فونت، و ...). <br>
+       3-مقدار (Value):
+    مقدار مشخص شده برای ویژگی. <br>
+    </p>
+    <h3>خلاصه ساختار CSS</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>بخش</th>
+          <th>توضیح</th>
+          <th>مثال</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>انتخابگر</td>
+          <td>مشخص‌کننده عنصر HTML</td>
+          <td>h1, .class, #id</td>
+        </tr>
+        <tr>
+          <td>ویژگی (Property)</td>
+          <td>تعیین‌کننده خاصیت عنصر</td>
+          <td>color, font-size</td>
+        </tr>
+        <tr>
+          <td>مقدار (Value)</td>
+          <td>مقدار خاصیت مشخص شده</td>
+          <td>blue, 16px</td>
+        </tr>
+      </tbody>
+    </table><br>
+    <br>
+    <strong>ابزارهایی برای انتخاب عناصر HTML و اعمال استایل بر روی آن‌ها:</strong><br>
+    <br>
+    <strong>1. نقطه (.)</strong><br>
+    <br>
+    <div>نقطه در CSS برای تعریف کلاس‌ها (Classes) استفاده می‌شود.
+ کلاس‌ها یک نام عمومی هستند که می‌توانند به چندین عنصر HTML اختصاص داده شوند.
+از کلاس‌ها برای استایل‌دهی به گروهی از عناصر استفاده می‌شود.
+</div>
+ <code>
+ }className. <br>
+        property: value;<br>
+   {
+ </code><br>
+ <br>
+<strong>2. شارپ (#)</strong><br>
+<br>
+<div>شارپ برای تعریف آی‌دی (ID) در CSS استفاده می‌شود. 
+    آی‌دی یک نام یکتا است که فقط به یک عنصر HTMLاختصاص داده می‌شود.
+</div>
+<code>
+
+   } idName# <br>
+        property: value;<br>
+{
+
+</code><br>
+<br>
+<strong>3. ستاره (*)</strong><br>
+<br>
+<div>
+    ستاره یک انتخابگر جهانی (Universal Selector) در 
+    CSS است که تمام عناصر صفحه را انتخاب می‌کند.
+</div>
+<code>
+} *<br>
+        property: value;<br>
+        {
+
+</code><br>
+<br>
+<strong>4. ترکیب نقطه، شارپ و ستاره</strong><br>
+<br>
+<div>می‌توانید هم‌زمان از کلاس و ID برای استایل‌دهی استفاده کنید.</div><br>
+<code>
+} main.content# <br>
+        background-color: lightgreen;<br>
+        {
+</code><br>
+<h3>تفاوت نقطه (کلاس) و شارپ (ID)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ویژگی</th>
+      <th>کلاس (.)</th>
+      <th>آی‌دی (#)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>نحوه تعریف</td>
+      <td>با نقطه (`.`) آغاز می‌شود</td>
+      <td>با شارپ (`#`) آغاز می‌شود</td>
+    </tr>
+    <tr>
+      <td>کاربرد</td>
+      <td>برای استایل‌دهی گروهی از عناصر</td>
+      <td>برای شناسایی یکتای یک عنصر</td>
+    </tr>
+    <tr>
+      <td>تعداد استفاده</td>
+      <td>می‌تواند به چند عنصر اعمال شود</td>
+      <td>فقط به یک عنصر اعمال می‌شود</td>
+    </tr>
+    <tr>
+      <td>اولویت</td>
+      <td>اولویت کمتر نسبت به ID</td>
+      <td>اولویت بالاتر نسبت به کلاس</td>
+    </tr>
+  </tbody>
+</table><br>
+<br>
+<strong>استایل دهی تو در تو</strong><br>
+<p>
+    استایل‌دهی تو در تو در CSS به معنای استفاده از انتخابگرهای ترکیبی و سلسله‌مراتبی است 
+    که به شما امکان می‌دهد استایل‌ها را برای عناصر خاصی
+    که در داخل عناصر دیگر قرار دارند، اعمال کنید. این روش به مدیریت
+    دقیق‌تر و خوانایی بیشتر کدها کمک می‌کند.
+</p>
+<p>
+<strong>انتخابگرهای سلسله‌مراتبی (Descendant Selectors):</strong>  انتخاب عناصری که در داخل عناصر دیگر هستند.
+<br>
+<br>
+<code>
+}parent child <br>
+        ;property: value<br>
+        {
+      
+</code><br>
+<br>
+<strong>انتخابگرهای فرزند مستقیم (Child Selectors):</strong>انتخاب فقط فرزندان مستقیم یک عنصر.
+<br>
+<br>
+<code>
+}  parent > child <br>
+       ; property: value <br>
+      
+        {
+</code>
+</p>
+</body>
+</html>

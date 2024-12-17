@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ها</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+        }
+        code {font-style: oblique;
+            color: crimson;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <strong>tage div;</strong><br>
+    <br>
+    <p>
+        تگ &lt;di&lt; در HTML یک تگ بلاک‌سطری (block-level) است که برای گروه‌بندی محتوا و ایجاد
+        ساختارهای منطقی در صفحات وب استفاده می‌شود.
+        این تگ هیچ محتوای خاصی به‌طور پیش‌فرض ندارد و بیشتر برای
+        جداسازی بخش‌های مختلف صفحه و اعمال استایل‌ها یا ویژگی‌های جاوااسکریپت
+        به بخش‌های مختلف کاربرد دارد. <br>
+        <br>
+        <code>
+            &lt;div&gt;<br>
+            &lt;h4&gt;عنوان بخش&lt;/h4&gt;<br>
+            &lt;p&gt;این یک پاراگراف است که در داخل یک تگ &lt;code&gt;div&lt;/code&gt; قرار دارد.&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </p><br>
+    <strong>Tage span:</strong><br>
+    <br>
+    <p>
+        تگ &lt;span&gt;در HTML یک تگ Inline است که برای  
+        گروه‌بندی محتوای متنی در یک خط (بدون شکستن خط) و
+        اعمال استایل‌ها یا ویژگی‌های خاص به آن استفاده می‌شود. 
+        این تگ برخلاف تگ‌های بلاک‌سطری مانند &lt;div&gt;
+        محتوای خود را در همان خط باقی می‌گذارد و تنها
+        برای تنظیمات جزئی یا تغییرات در یک بخش خاص از
+        متن به کار می‌رود. <br>
+        <br>
+        <code>
+            &lt;p&gt;این یک متن است که در آن از تگ &lt;span&gt;span&lt;/span&gt; استفاده شده است.&lt;/p&gt;
+        </code>
+    </p>
+    <strong>Tage from:</strong><br>
+    <br>
+    <p>
+        در HTML تگ &lt;form&gt; برای ساخت فرم‌های ورودی استفاده می‌شود. 
+        فرم‌ها به کاربران امکان می‌دهند داده‌ها را
+        وارد کنند و این داده‌ها را به یک سرور ارسال کنند.
+    </p>
+    <strong>ویژگی‌های اصلی تگ:</strong><br>
+    <br>
+    <b>1-url:</b>یا مسیری که داده‌های فرم به آن ارسال می‌شود. <br>
+    <b>2-method:</b>روشی که برای ارسال داده‌ها استفاده می‌شود (GET یا POST). <br>
+    <b>3-enctype:</b>نوع رمزگذاری داده‌های فرم (مثلاً برای ارسال فایل از multipart/form-data استفاده می‌شود). <br>
+    <b>4-target:</b>تعیین می‌کند پاسخ فرم در کجا نمایش داده شود (_self, _blank, _parent, _top). <br>
+    <b>5-novalidate:</b>اگر اضافه شود، مرورگر اعتبارسنجی فرم را انجام نمی‌دهد. <br>
+    <br>
+    <code>
+        &lt;form action="submit" method="POST"&gt;&lt;/form&gt;<br>
+        &lt;label for="name"&gt;name:&lt;/label&gt;<br>
+        &lt;"input type="text" id="name" name="name&gt;<br>
+        &lt;button type="submit"&gt;;send&lt;/button&gt;<br>
+        &lt;form/&gt;
+        </code>
+
+    <form action="/submit" method="POST">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">send</button>
+    </form><br><br>
+    <code>
+        &lt;form action="/search" method="GET"&gt;<br>
+        &lt;label for="query"&gt;search:&lt;/label&gt;<br>
+        &lt;inputinput type="text" id="query" name="query"&gt;<br>
+        &lt;button type="submit"&gt;search&lt;/button&gt;<br>
+        &lt;/form&gt;<br>
+    </code>
+
+    <form action="/search" method="GET">
+        <label for="query">search:</label>
+        <input type="text" id="query" name="query">
+        <button type="submit">search</button>
+    </form><br><br>
+    <code>
+        &lt;form action="/upload" method="POST" enctype="multipart/form-data"&gt;<br>
+        &lt;abel for="file"&gt;upload file:&lt;/label&gt;<br>
+        &lt;input type="file" id="file" name="file"&gt;<br>
+        &lt;button type="submit"&gt;upload&lt;/button&gt;<br>
+        &lt;/form&gt;<br> 
+    </code>
+    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">upload file:</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">upload</button>
+    </form><br><br>
+    <code>
+        &lt;form action="/submit" method="POST" target="_blank"&gt;<br>
+        &lt;abel for="email"&gt;email :&lt;/label&gt;<br>
+        &lt;input type="email" id="email" name="email"&gt;<br>
+        &lt;button type="submit"&gt;send&lt;/button&gt;<br>
+        &lt;/form&gt;<br> 
+    </code>
+    <form action="/submit" method="POST" target="_blank" novalidate>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">send</button>
+    </form><br>
+    <br>
+    <strong>Tage input:</strong><br>
+    <p>
+        تگ &lt;input&gt; یکی از پرکاربردترین تگ‌های HTML است
+        که برای گرفتن ورودی از کاربر استفاده می‌شود. این تگ
+        به‌طور پیش‌فرض یک تگ self-closing است، یعنی نیازی به تگ پایانی ندارد.
+        نوع ورودی مشخص می‌کند که این تگ چگونه عمل کند و چه نوع داده‌ای از کاربر بگیرد. 
+    </p><br>
+    <strong>ویژگی‌های اصلی تگ input:</strong><br>
+
+    <b>1-type:</b> تعیین نوع ورودی (مانند text, password, email, checkbox و غیره).br
+    <b>2-name:</b>نام فیلد برای شناسایی آن در زمان ارسال داده‌ها. <br>
+    <b>3-value:</b>مقدار پیش‌فرض یا مقدار فعلی فیلد. <br>
+    <b>4-placeholder:</b>متن راهنمایی که داخل ورودی نمایش داده می‌شود. <br>
+    <b>5-required:</b>اگر اضافه شود، فیلد باید قبل از ارسال فرم پر شود. <br>
+    <b>6-disabled:</b>غیرفعال کردن ورودی. <br>
+    <b>7-readonly:</b>فقط خواندنی کردن ورودی. <br>
+    <b>8-maxlengthوminlength:</b> تعیین حداقل و حداکثر تعداد کاراکترها. <br>
+    <b>9-pattern:</b> اعمال الگوی خاص برای ورودی. <br>
+    <b>10-autocomplete:</b>فعال/غیرفعال کردن قابلیت تکمیل خودکار. <br>
+    <br>
+
+    <code>
+        &lt;form action="/submit" method="POST"&gt;<br>
+        &lt;label for="name"&gt; نام:  &lt;/label&gt;<br> 
+        &lt;input type="text" id="name" name="name" required&gt;<br>
+     <br>
+        &lt;label for="email"&gt;ایمیل:  &lt;/label&gt;<br>
+        &lt;input type="email" id="email" name="email" required&gt;<br>
+     <br>
+        &lt;label for="password"&gt;رمز عبور:&lt;/label&gt;<br>
+        &lt;input type="password" id="password" name="password" minlength="8" required&gt;<br> 
+     <br>
+        &lt;label for="birthday"&gt;تاریخ تولد:  &lt;/label&gt;<br>
+        &lt;input type="date" id="birthday" name="birthday"&gt;<br>
+     <br>
+        &lt;label&gt <br>
+        &lt;input type="checkbox" name="terms" required&gt;<br>
+        &lt;/label&gt;<br>
+     <br>
+        &lt;input type="submit" value="ارسال"&gt;<br>
+       &lt;/form&gt;
+    </code><br>
+    <br>
+    <b>خروجی کد بالا:</b>
+    <form action="/submit" method="POST">
+        <label for="name">نام:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">ایمیل:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="password">رمز عبور:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+    
+        <label for="birthday">تاریخ تولد:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+    
+        <label>
+            <input type="checkbox" name="terms" required> با قوانین موافقم
+        </label><br><br>
+    
+        <input type="submit" value="ارسال">
+    </form><br>
+    <br>
+    <strong>Attribut id:</strong><br>
+    <p>
+        در HTML، ویژگی id برای مشخص کردن یک شناسه یکتا
+        (Unique Identifier) برای یک عنصر استفاده می‌شود.
+        مقدار این ویژگی باید در کل سند یکتا باشد و نمی‌تواند برای دو عنصر مشابه استفاده شود. <br>
+        <br>
+        <code>
+            &lt;/p&gt;این متن قابل تغییر است.&lt;p id="text"&gt;
+        </code>
+    </p><br>
+    <br>
+    <strong>Attribut for:</strong><br>
+    <p>
+        ویژگی for در HTML به‌طور خاص در تگ &lt;label&gt;
+        استفاده می‌شود و عنصری را که این برچسب به آن اشاره
+        دارد، مشخص می‌کند. این ویژگی باعث می‌شود که کلیک 
+        روی برچسب (label) باعث فعال شدن یا فوکوس کردن
+        روی عنصر مرتبط شود.
+        مقدار for باید برابر با مقدار ویژگی id عنصری باشد که برچسب به آن اشاره می‌کند.
+        معمولاً برای عناصر فرم مانند &lt;input&gt;, &lt;textarea&gt;, و &lt;select&gt; استفاده می‌شود.
+         <br>
+        <br>
+        <code>
+        &lt;/label&gt;نام کاربری:&lt;label for="username"&gt;<br>
+        &lt;input type="text" id="username" name="username"&gt;
+        </code>
+    </p><br>
+    <br>
+    <strong>Tage textarea:</strong><br>
+    <p>
+        تگ &lt;textarea&gt; در HTML برای ایجاد یک ناحیه متنی 
+        چند خطی استفاده می‌شود که کاربر می‌تواند در آن متن
+        وارد کند. برخلاف تگ &lt;input type="text"&gt;
+        فقط یک خط ورودی فراهم می‌کند،که
+        &lt;textarea&gt; برای متن‌های طولانی مناسب است.
+    <br>
+    <b>ویژگی‌های مهم:</b><br>
+    <b>rows:</b>تعداد خطوط (ارتفاع) ناحیه متنی. <br>
+    <b>cols:</b>تعداد کاراکترها در هر خط (عرض ناحیه متنی). <br>
+    <br>
+    <code>
+        &lt;textarea name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+    </code><br>
+    <br>
+    <textarea name="message" rows="4" cols="50"></textarea>
+    
+</p><br>
+<br>
+<strong>Tage select:</strong><br>
+<p>
+    تگ &lt;select&gt; در HTML برای ایجاد یک منوی کشویی
+    استفاده می‌شود که به کاربر امکان می‌دهد یک یا چند
+    گزینه را انتخاب کند. این تگ معمولاً همراه با تگ‌های 
+    داخلی &lt;option&gt; برای تعریف گزینه‌های موجود استفاده می‌شود. <br>
+    <br>
+    <b>ویژگی‌های مهم:</b>
+    <br>
+    <b>1-name:</b>نام منوی کشویی که هنگام ارسال فرم استفاده می‌شود. <br>
+    <b>2-id:</b>شناسه یکتا برای اتصال به برچسب &lt;label&lt;یا استفاده در CSS و JavaScript. <br>
+    <b>3-multiple:</b>به کاربر امکان انتخاب چند گزینه را می‌دهد. <br>
+    <b>4-size:</b>تعداد گزینه‌هایی که همزمان نمایش داده می‌شوند <br>
+    <b>5-required:</b>کاربر باید حداقل یک گزینه را انتخاب کند. <br>
+    <b>6-disable:</b>غیرفعال کردن منو.
+</p><br>
+<br>
+<code>
+    &lt;form action="/submit" method="POST"&gt; <br> 
+    &lt;/label&gt;جنسیت: &lt;label for="gender"&gt;<br>
+    &lt;select id="gender" name="gender" required&gt;<br>
+    &lt;/option&gt;انتخاب کنید&lt;option value="" disabled selected&gt;<br>
+    &lt;/option&gt;مرد &lt;option value="male"&gt; <br>
+    &lt;/option&gt; زن &lt;option value="female"&gt;<br>
+    &lt;/option&gt; دیگر &lt;option value="other"&gt;<br>
+    &lt;select/&gt;<br>
+    <br>
+   
+    &lt;/label&gt;علایق: &lt;label for="hobbies"&gt;<br>
+    &lt;select id="hobbies" name="hobbies[]" multiple size="3"&gt;<br>
+    &lt;/option&gt;مطالعه &lt;option value="reading"&gt; <br>
+    &lt;/option&gt; ورزش &lt;option value="sports"&gt;<br>
+    &lt;/option&gt; سفر &lt;option value="traveling"&gt;<br>
+    &lt;select/&gt;<br>
+<br>
+    &lt;button/&gt;ارسال&lt;button type=submit&gt;<br>
+&lt;form/&gt;
+
+</code><br>
+<br>
+<form action="/submit" method="POST">
+    <label for="gender">جنسیت:</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>انتخاب کنید</option>
+        <option value="male">مرد</option>
+        <option value="female">زن</option>
+        <option value="other">دیگر</option>
+    </select><br><br>
+
+    <label for="hobbies">علایق:</label>
+    <select id="hobbies" name="hobbies[]" multiple size="3">
+        <option value="reading">مطالعه</option>
+        <option value="sports">ورزش</option>
+        <option value="traveling">سفر</option>
+    </select><br><br>
+
+    <button type="submit">ارسال</button>
+</form>
+
+</body>
+</html>

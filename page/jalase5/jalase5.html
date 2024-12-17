@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تگها در HTML</title>
+    <style>
+      code {color: rgb(123, 123, 196);
+        font-style: oblique;
+      }
+      body {font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        margin-top: 10px;
+        margin-right: 10px;
+        color: whitesmoke;
+
+      }
+      strong {color: red;
+
+      }
+    </style>
+</head>
+<body>
+    <strong>Tage link:</strong><br>
+    <div><br>
+        تگ &lt;link&gt; در HTML برای ارتباط دادن صفحه‌ی وب به منابع خارجی
+        (مانند فایل‌های CSS، آیکون‌ها و ...) استفاده می‌شود.
+        این تگ معمولاً در بخش &lt;head&gt; صفحه قرار می‌گیرد
+        و به تنهایی قابل نمایش در صفحه نیست.
+        تگ &lt;link&gt; برای اتصال منابع خارجی یا متادیتاها است و در صفحه نمایش داده نمی‌شود.
+         <br><br>
+        <b>ویژگی‌های مهم تگ link:</b><br>
+        <br>
+        <b>1)rel:</b>
+        <span>نوع رابطه بین صفحه و منبع موردنظر. نمونه‌هایی از مقادیر</span><br>
+        <br>
+        <b>2)stylesheet:</b>
+        <span>برای اتصال فایل‌های CSS.</span><br>
+        <br>
+        <code>
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        </code><br>
+        <br>
+        <b>3)icon:</b>
+        <span>برای مشخص کردن آیکون وب‌سایت (Favicon)</span><br>
+        <br>
+        <b>4)href:</b>
+        <span>مسیر یا آدرس منبع خارجی</span><br>
+        <br>
+        <b>5)type:</b>
+        <span>نوع فایل پیوند داده‌شده (اختیاری). برای CSS، مقدار معمولاً text/css است.</span><br>
+        <br>
+        <code>
+            &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+        </code><br>
+        <br>
+        <b>6)media:</b>
+        <span> مشخص می‌کند که فایل موردنظر برای چه دستگاه یا سایزی مناسب است
+            (مثلاً برای موبایل یا چاپ).
+        </span><br>
+        <br>
+        <code>
+            &lt;link rel="stylesheet" href="print.css" media="print"&gt;
+        </code>
+    </div><br>
+    
+    <strong>Tage table:</strong><br>
+    <div><br>
+         تگ &lt;table&gt; در HTML برای ایجاد جداول استفاده می‌شود.
+         جداول به ما اجازه می‌دهند داده‌ها را در قالب ردیف‌ها و ستون‌ها سازمان‌دهی کنیم. <br>
+         <br>
+         <b>تگ‌ها و ویژگی‌های مرتبط:</b><br>
+         <br>
+         <b>1)&lt;table&gt;:</b>
+         <span>عنصر اصلی که جدول را تعریف می‌کند.</span><br>
+         <br>
+         <b>2)&lt;tr&gt;:</b>
+         <span>هر ردیف جدول.</span><br>
+         <br>
+         <b>3)&lt;td&gt;:</b>
+         <span>سلول داده در یک ردیف.</span><br>
+         <br>
+         <b>4)&lt;th&gt;:</b>
+         <span>سرستون یا سلول عنوان که معمولاً متن آن ضخیم و تراز وسط (مرکز) است.</span><br>
+         <br>
+         <b>5)&lt;thead&gt;:</b>
+         <span> برای گروه‌بندی سرستون‌ها.</span><br>
+         <br>
+         <b>6)&lt;tbody&gt;:</b>
+         <span> برای گروه‌بندی داده‌های جدول.</span><br>
+         <br>
+         <b>7)&lt;tfoot&gt;:</b>
+         <span>برای گروه‌بندی بخش پایانی جدول (مثل خلاصه یا جمع‌بندی).</span><br>
+         <br>
+         <b>8)rowspan:</b>
+         <span>ترکیب سلول‌ها در چند ردیف.</span><br>
+         <br>
+         <b>9)colspan:</b>
+         <span>ترکیب سلول‌ها در چند ستون.</span><br>
+         <br>
+         <code>
+            &lt;table border="1"&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;name&lt;/th&gt;<br>
+            &lt;th&gt;Details&lt;/th&gt;<br>
+            &lt;tr/&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td rowspan="2"&gt;ali&lt;/td&gt;<br>
+            &lt;td&gt;Student&lt;/td&gt;<br>
+            &lt;tr/&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;tehran&lt;/td&gt;<br>
+            &lt;tr/&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td colspan="2"&gt;Conclusion&lt;/td&gt;<br>
+            &lt;tr/&gt;<br>
+            &lt;table/&gt;<br>
+         </code><br>
+         <div>مثال کد بالا:</div>
+         <span>
+            <table border="2px">
+                <tr>
+                  <th>نام</th>
+                  <th>جزئیات</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">علی</td>
+                  <td>دانشجو</td>
+                </tr>
+                <tr>
+                  <td>تهران</td>
+                </tr>
+                <tr>
+                  <td colspan="2">جمع‌بندی</td>
+                </tr>
+              </table>
+              
+         </span>
+    </div><br>
+    <br>
+  <strong>Attribut scope:</strong><br>
+  <br>
+  <div>
+    در HTML، ویژگی scope در تگ &lt;th&gt;
+    استفاده می‌شود تا مشخص کند که سرستون یا سرسطر
+    یک جدول (table header) به کدام بخش از جدول اعمال می‌شود. این ویژگی به خوانایی
+    بیشتر جداول توسط ابزارهای کمکی مانند screen readers کمک می‌کند
+    بنابراین دسترسی‌پذیری (accessibility) جداول افزایش می‌یابد. <br>
+    <br>
+    &lt;th scope="row"&gt;row header&lt;/th&gt;
+  </div><br>
+  <br>
+  <strong>Tage kbd:</strong><br>
+  <br>
+  <div>
+    تگ &lt;kbd&gt; در HTML برای نمایش ورودی کاربر از طریق صفحه‌کلید، صدا، 
+    یا هر وسیله ورودی دیگر استفاده می‌شود. این تگ معمولاً برای مشخص کردن
+    کلیدها یا ترکیب کلیدهایی که کاربر باید فشار دهد به کار می‌رود و
+    به صورت پیش‌فرض، متن داخل آن با یک فونت تک فاصله (monospace) نمایش داده می‌شود. <br>
+    </div><br>
+    <strong>Tage code:</strong><br>
+    <br>
+    <div>
+      تگ &lt;code&gt; در HTML برای نمایش کدهای برنامه‌نویسی یا هر نوع محتوای مرتبط با کدنویسی استفاده می‌شود.
+      این تگ متن داخل خود را با یک فونت تک‌فاصله (monospace) نمایش می‌دهد که برای نمایش قطعات کد مناسب است.
+    </div><br>
+    <br>
+    <strong>Tage samp:</strong><br>
+    <br>
+    <div>
+      &lt;samp&gt; در HTML برای نمایش خروجی یک برنامه، دستگاه یا سیستم استفاده می‌شود.
+      این تگ معمولاً برای نمایش پیام‌های سیستم 
+      یا نتایج حاصل از اجرای کد کاربرد دارد و به صورت پیش‌فرض با فونت تک‌فاصله (monospace) نمایش داده می‌شود.
+    </div><br>
+    <br>
+    <strong>Tage var:</strong><br>
+    <br>
+    <div>
+      تگ &lt;var&gt; در HTML برای نمایش متغیرها در یک عبارت ریاضی،
+      کد برنامه‌نویسی، یا هر نوع محتوایی که شامل
+      یک متغیر است استفاده می‌شود. متن داخل این تگ
+      به‌صورت پیش‌فرض با فونت ایتالیک (italic) نمایش داده می‌شود تا نشان‌دهنده‌ی متغیر بودن آن باشد.
+
+    </div><br>
+    <br>
+
+   
+
+
+  
+  
+    
+</body>
+</html>

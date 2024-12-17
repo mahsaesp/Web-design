@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واحد اندازه گیری</title>
+
+<style>
+    code {border: 1px solid gray;
+        display: inline;
+        border-radius: 8 px;
+        color: purple;
+        padding: 5px;
+        margin: 5px;
+        background-color: beige;
+
+        
+        
+
+    }
+</style>
+</head>
+<body>
+    <h1> واحد اندازه گیری ها:</h1>
+    <p>
+        واحدها ی نسبی در css نسبت به اندازه های دیگر(مانند اندازه عنصر
+        والد،فونت پایه،و یا اندازه ویوپورت) تعریف 
+        می شوند و بسیار مناسب برای طراحی واکنش گرا 
+        (Responsive) هستند.در ادامه هر واحد نسبی به تفضیل توضیح
+        داده شده است.
+    </p><br>
+    <b>1-درصد(%):</b><br>
+    <br>
+    <div>
+        مقدار درصدی نسبت به اندازه عنصر والد (Parent) تعریف 
+        می شود.در خصوص ابعاد درصد ها ، به عرص و ارتفاع یا دیگر ویزگی های 
+        والد وابسته است.
+    </div><br>
+    <code>
+        width:50%   (نصف عرض عنصر والد)
+    </code>
+    <code>
+        Height:25% (یک چهارم ارتفاع عنصر والد)
+    </code><br>
+    <br>
+    <b>2-em:</b><br>
+    <br>
+    <div>
+        نسبت به اندازه فونت عنصر والد محاسبه می شود.
+        اگر فونت عنصر والد 16px باشد مقدار 1em معادل 16px است.
+    </div><br>
+    
+    <code>
+        font-size:2em (دو برابر اندازه فونت والد)
+    </code>
+    <code>
+        margin:1.5em (1.5 برابر اندازه فونت والد)
+    </code><br>
+    <br>
+    <b>3-rem (rootrem):</b><br>
+    <br>
+    <div>
+        واحد rem مشابه em است.اما به جای عنصر والد،نسبت
+        به اندازه فونت ریشه(root) یعنی عنصر (html) 
+        محاسبه می شود. برای طراحی های که نیاز به مقیاس بندی
+        در کل صفحه دارند rem گزینه بهتری است.  
+    </div><br>
+    <code>
+        font-size:1rem(برابر با اندازه فونت ریشه)
+    </code>
+    <Code>
+        padding:0.5rem(نصف اندازه فونت ریشه)
+    </Code><br>
+    <br>
+    <b>4-(viewport width) vw:</b>
+<br>
+<br>
+<div>
+    واحد vw نسبت به عرض ویوپورت محاسبه می شود. 
+   از کل عرض کل ویوپورت1vw=1%
+</div><br>
+<code>
+    width:vw (نصف عرض ویوپورت)
+</code>
+<code>
+    font-size:10vw (اندازه متن برابر با 10% عرض ویوپورت)
+</code><br>
+<br>
+<b>5-vh (viewport height):</b><br>
+<br>
+<div>
+    واحد vh تسبت به ارتفاع ویوپورت محاسبه می شود. 
+    از ارتفاع کل ویوپورت 1vh=1%
+</div><br>
+<code>
+    hight:100vh (تمام ارتفاع ویوپورت)
+</code>
+<code>
+    margin-top:10vh (فاصله 10% از بالا ی ویوپورت)
+</code><br>
+<br>
+<b>
+نکته:واحدهای نسبی مانند vm,rem,em,vh بهترین
+انتخاب برای طراحی واکنش گرا هستند. برای متن و فاصله ها
+بهتر است از re و em استفاده کنید برای تنظیم ابعاد کلی می توانید از vh و 
+vw  کمک بگیرید. 
+</b>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تگها در HTML</title>
+    <style>
+        body {background-color: beige;
+            margin-top: 20px;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            line-height: 1.5;
+        }
+        strong {border: 1px double saddlebrown;
+                border-radius: 50px;
+                padding: 5px;
+                margin: 5px;
+                background-color: sandybrown;
+
+        }
+        code {background-color: burlywood;
+            font-style: oblique;
+
+        }
+    </style>
+</head>
+<body>
+    <strong>Attribut lang:</strong><br>
+    <br>
+    <div>
+        در HTML برای مشخص کردن زبان محتوای یک عنصر استفاده می‌شود.
+         این ویژگی به مرورگرها، موتورهای جستجو، 
+         و ابزارهای کمکی مانند صفحه‌خوان‌ها کمک می‌کند تا محتوا را بهتر پردازش کنند.
+    </div><br>
+    <strong>Attribut dir:</strong><br>
+    <br>
+    <div>
+        ویژگی dir در HTML برای تعیین جهت متن استفاده می‌شود. 
+        این ویژگی به مرورگر می‌گوید که محتوای یک عنصر باید از چپ به راست (LTR) یا از راست به چپ 
+        (RTL) نمایش داده شود. 
+    </div><br>
+    <strong>Tage Meta:</strong><br>
+    <br>
+    <div>
+        تگ &lt;meta&gt; در HTML برای تعریف اطلاعات متا (Metadata) درباره‌ی صفحه وب استفاده می‌شود. 
+        این
+         اطلاعات برای مرورگرها، موتورهای جستجو و سایر سرویس‌ها به‌کار می‌رود و
+          شامل توضیحات، کدگذاری کاراکترها، تنظیمات ویوپورت و موارد دیگر است. تگ‌های 
+          &lt;meta&gt; معمولاً در بخش &lt;head&gt; 
+          قرار می‌گیرند.
+    </div><br>
+    <strong> Tage Meta Charset:</strong><br>
+    <br>
+    <div>
+        تگ &lt;meta charset&gt; برای تعریف نوع کدگذاری کاراکترها 
+        (Character Encoding) استفاده می‌شود. این تگ به مرورگر می‌گوید که چگونه کاراکترهای موجود در صفحه را تفسیر کند.
+         استفاده صحیح از این تگ برای نمایش درست محتوای متنی، به‌ویژه برای زبان‌هایی با کاراکترهای خاص مثل فارسی، عربی، چینی و غیره، ضروری است. <br>
+         <code>
+            &lt;meta charset="UTF-8"&gt;
+        </code><br>
+        رایج ترین و پرکاربردترین کد گذاری utf-8 است. 
+        زیرااز تمام زبان‌ها (مانند فارسی، عربی، انگلیسی، چینی و ...) پشتیبانی می‌کند.
+    </div><br>
+    <strong> Tage meta viewport:</strong><br>
+    <br>
+    <div>
+         تگ &lt;meta name="viewport"&gt;در HTML برای تنظیم نحوه نمایش صفحه وب در دستگاه‌های مختلف استفاده می‌شود.
+        این تگ به‌ویژه برای طراحی وب‌سایت‌های ریسپانسیو (Responsive) که در موبایل و دسکتاپ به‌درستی نمایش داده می‌شوند، 
+        ضروری است. <br>
+       <code>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+       </code>
+    </div><br>
+    <strong> Tage dl:</strong><br>
+    <br>
+    <div>
+        تگ &lt;dl&gt; در HTML برای ایجاد یک لیست توضیحی یا لیست تعریف‌ها (Definition List) استفاده می‌شود. 
+        این نوع لیست معمولاً شامل مجموعه‌ای از اصطلاحات و توضیحات مربوط به آن‌ها است.
+        تگ &lt;dl&gt; به همراه تگ‌های زیر استفاده می‌شود: <br>
+       1- &lt;dt&gt; : برای تعریف یک اصطلاح یا عنوان.مخفف(Definition Term) <br>
+       2-&lt;dd&gt;: برای ارائه توضیحات یا شرح مربوط به اصطلاح.مخفف (Definition Description) <br>
+       <code>
+        &lt;dl&gt;<br>
+            &lt;dt&gt;HTML&lt;/dt&gt;<br>
+            &lt;dd&gt;یک زبان نشانه‌گذاری برای طراحی صفحات وب.&lt;/dd&gt;<br>
+            &lt;dl/&gt;<br>    
+       </code>
+    </div><br>
+    <strong> Tage q & blockquote:</strong><br>
+    <br>
+    <div>
+        تگ &lt;q&gt;برای نقل قول‌های کوتاه استفاده می‌شود که درون خط متن قرار دارند.
+        تگ &lt;blockquote&gt;برای نقل قول‌های طولانی استفاده می‌شود که معمولاً به صورت جداگانه در صفحه نمایش داده می‌شوند. <br>
+        ویژگی‌های مهم: <br>
+     مرورگرها به‌طور پیش‌فرض نقل قول‌ها را درون علامت نقل قول ("") قرار می‌دهند. <br>
+     می‌توان از ویژگی cite برای منبع نقل قول استفاده کرد. <br>
+     <code>
+        &lt;blockquote cite="https://example.com/quotes"&gt;<br>
+        هر چالشی فرصتی برای یادگیری است. <br>
+        &lt;blockquote/&gt;<br>
+        &lt;p&gt;<br>
+        او گفت: <br>
+        &lt;q cite="https://example.com/quotes"&gt;<br>
+        تلاش کلید موفقیت است. <br>
+        &lt;q/&gt;<br>
+        &lt;p/&gt;
+     </code>
+    </div><br>
+    <strong> Tage a:</strong><br>
+    <br>
+    <div>
+        تگ &lt;a&gt; در HTML مخفف "anchor" است
+        و برای ایجاد لینک‌های هایپرمتنی (hyperlinks) استفاده می‌شود.
+        این تگ به کاربران امکان می‌دهد به صفحه دیگری، بخشی از همان صفحه، یا یک فایل خارجی منتقل شوند. <br>
+        ویژگی‌های رایج: <br>
+        1-href (Hypertext Reference): آدرس مقصد لینک. <br>
+        <code>
+            &lt;a href="https://example.com"&gt;<br>
+            بازدید از <br>
+            &lt;a/&gt;
+        </code><br>
+        2-target: نحوه باز شدن لینک را تعیین می‌کند. <br>
+        _self (پیش‌فرض): باز شدن در همان تب. <br>
+        _blank: باز شدن در تب جدید. <br>
+        <code>
+        &lt;a href="https://example.com" target="_blank"&gt; <br>
+        بازکردن در تب جدید <br>
+        &lt;a/&gt;
+        </code><br>
+        3-rel: تعریف رابطه بین صفحه فعلی و مقصد لینک. <br>
+        -nofollow: به موتورهای جستجو می‌گوید لینک را دنبال نکنند. <br>
+        -noopener یا noreferrer: جلوگیری از ارسال اطلاعات اضافی به مقصد. <br>
+        <code>
+            &lt;a href="https://example.com" rel="nofollow"&gt; <br>
+            لینک نوفالو<br>
+         &lt;a/&gt;
+        </code><br>
+        4-title: متنی که هنگام قرار دادن نشانگر روی لینک نمایش داده می‌شود. <br>
+        <code>
+            &lt; "a href="bttps://example.com" title="bazdid sait&gt;<br>
+                لینک با توضیح<br>
+                &lt;a/&gt;
+        </code>
+    </div><br>
+    <strong> Tage img:</strong><br>
+    <br>
+    <div>
+        تگ &lt;img&gt; در HTML برای نمایش تصاویر استفاده می‌شود.
+        این تگ یک عنصر تک‌پایانی است، یعنی به تگ بسته نیازی ندارد. <br>
+        ویژگی‌های مهم: <br>
+        1-src (Source): مسیر یا آدرس تصویر. <br>
+        2-alt (Alternative Text):توضیحات جایگزین در صورتی که تصویر بارگذاری نشود 
+          استفاده از این ویژگی برای دسترس‌پذیری و سئو مهم است. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="in yek nemome ast&gt;
+        </code><br>
+        3-width و height: تنظیم عرض و ارتفاع تصویر به پیکسل یا درصد. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="in yek tasvire nemone ast" width="200" height="150&gt;
+        </code><br>
+        4-title: متنی که هنگام قرار گرفتن نشانگر ماوس روی تصویر نمایش داده می‌شود. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="pic" title="in tek tasvir ast&gt;
+        </code><br>
+        5-loading: برای بارگذاری تنبل (Lazy Loading) استفاده می‌شود. <br>
+        -lazy: تصویر تنها زمانی بارگذاری می‌شود که در دید کاربر قرار گیرد. <br>
+        -eager: تصویر فوراً بارگذاری می‌شود. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="pic" loading="lazy&gt;
+        </code><br>
+        6-style: افزودن استایل مستقیم به تصویر. <br>
+        <code>
+            &lt;"img src="image.jpg"  style="border-radius: 10px&gt;
+        </code>
+
+    </div>
+    
+
+
+
+
+
+
+    
+
+        
+
+
+</body>
+</html>

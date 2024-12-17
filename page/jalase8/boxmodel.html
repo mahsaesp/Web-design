@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        code {border: 1px solid gray;
+            display: inline;
+            border-radius: 8 px;
+            padding: 5px;
+            margin: 5px;
+            color: purple;
+            background-color: beige;
+
+        }
+        body {font-family: Arial, Helvetica, sans-serif;
+            background-color:bisque;
+            margin-top: 50px;
+
+        }
+        b {border: 1px solid burlywood;
+            background-color: burlywood;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: small;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <b>
+        boxmodel درcss:
+    </b><br>
+    <div><br>
+        مدل boxmodel توضیح میدهد که مرورگر چگونه یک عنصر HTML 
+        را نمایش می دهد هر عنصر شامل بخش های زیر می باشد.
+    </div><br>
+    <span>محتوا(content), پدینگ(padding), بوردر(border) ,مارجین(margin)</span>
+    <br>
+    <br>
+    <b>1)پدینگ(padding):</b><br>
+    <br>
+    <div>
+      فاصله داخلی بین محتوا و حاشیه بوردر
+      در عنصر. این ویژگی باعث افزایش فضای داخلی عنصر می شود. 
+    </div><br>
+    <code>
+        ;padding:20px(فاصله بین محتوا و بوردر 20px)
+    </code>
+    <code>
+        ;padding:10px 15px(مقادیر چندگانه پدینگ:10pxبالا و چپ 15px پایین و راست)
+    </code>
+    <code>
+        ;padding:10px 15px 20px 25px(مقادیر چندگانه:10از بالا 15 از چپ 20از پایین و 25 از راست)
+    </code><br>
+    <br> <br>
+    <b>2)بوردر(border):</b><br>
+    <br>
+    <div>
+        خط و یا حاشیه که اطراف پدینگ و محتوا قرار می گیرد که شامل 
+        نوع،عرض و رنگ است. 
+    </div><br>
+    <code>
+       ; div {
+            border:2px solid black
+        }
+    </code><br>
+    <br><br>
+    <b>انواعBorder:</b>
+    <span>
+        خط ساده(solid),
+        خط چین(dashed),
+        نقطه چین(dotted),
+        دوخط(double),
+        بدون بوردر(non),
+        شکل دهی گوشه ها(border-radius)
+    </span><br>
+    <br>
+    <br>
+    <b>4)مارجین (margin):</b><br>
+    <br>
+    <div>
+        فاصله خارجی بین بوردر عنصر و عناصر دیگر. مارجین باعث ایجاد فضای
+        خالی بین عناصر می شود. 
+    </div><br>
+        
+    <code>
+        margin:10px 15px (مقادیر چندگانه مارجین:10 از بالا و چپ.15از پایین و راست)
+    </code>
+    <code>
+        div{maargin:20px}
+    </code>
+    
+    <code>
+       عنصر در مرکز افقی قرار می گیرد margin:auto
+       </code>
+       <br>
+       <br>
+       <br>
+       <b>نکات مهم:</b>
+
+    <div><br>
+        مارجین ها ادغام می شوند(margin collasping) اگر دو عنصر
+        پشت سر هم باشند مقدار مارجین بزرکتر اعمال می شود. <br>
+        padiing و border  در داخل عنصر هستند و margin در خارج از عنصر است. <br>
+        ویژگی box-sizing به صورت پیش فرض پدینگ و بوردر به عرض و ارتفاع
+        عنصر اضافه می کند.
+
+    </div>
+    <br>
+    <br>
+
+    
+
+
+    
+    
+</body>
+</html>
