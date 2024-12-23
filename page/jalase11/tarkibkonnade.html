@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترکیب کننده ها در css</title>
+    <style>
+        body {
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        code {color: blue;
+
+        }
+        strong {color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <strong>ترکیب‌کننده‌ها (Combinators) در CSS </strong>
+    <p>
+        ابزارهایی هستند که برای تعیین رابطه بین عناصر HTML به کار می‌روند.
+        این ترکیب‌کننده‌ها به شما اجازه می‌دهند استایل‌ها را بر اساس روابط میان عناصر اعمال کنید.
+    </p>
+    <strong>انواع ترکیب‌کننده‌ها در CSS</strong>
+    <p>
+    <strong>1-ترکیب‌کننده فرزند مستقیم (>):</strong> فقط به فرزندان مستقیم یک عنصر اعمال می‌شود. <br>
+    <code>
+    } div > p  <br>
+    ;color: blue <br>
+            {
+          
+    </code><br>
+    تمامی پاراگراف‌هایی که مستقیماً داخل یک &lt;div&gt; قرار دارند، آبی می‌شوند.
+    </p>
+    <p>
+    <strong>2-ترکیب‌کننده فرزند (space): </strong>به همه‌ی فرزندان (مستقیم یا غیر مستقیم) یک عنصر اعمال می‌شود. <br>
+    <code>
+    } div p <br>
+            color: red; <br>
+          
+            { 
+    </code> <br>
+    همه‌ی پاراگراف‌ها داخل یک &lt;div&gt;، بدون توجه به سطحشان، قرمز می‌شوند.
+    </p>
+    <p>
+        <strong>3-ترکیب‌کننده مجاور (+):</strong>  به عنصری که دقیقاً بعد از عنصر دیگر می‌آید، اعمال می‌شود. <br>
+        <code>
+        }  h1 + p <br>
+                color: green; <br>
+                {
+              
+        </code><br>
+        فقط اولین پاراگراف بعد از هر &lt;h1&gt; سبز می‌شود.
+    </p>
+    <p>
+        <strong>4-ترکیب‌کننده عمومی (~):</strong>به همه‌ی عناصر هم‌سطح که بعد از عنصر مشخص‌شده می‌آیند، اعمال می‌شود. <br>
+        <code>
+        } h1 ~ p <br>
+                color: purple; <br>
+              
+                { 
+        </code><br>
+        همه‌ی پاراگراف‌هایی که هم‌سطح با &lt;h1&gt; هستند و بعد از آن قرار دارند، بنفش می‌شوند.
+    </p>
+    <p>
+        <strong>5-ترکیب‌کننده گروه (,):</strong>برای استایل دادن به چندین انتخابگر مختلف. <br>
+        <code>
+        }  h1, h2, p <br>
+                font-family: Arial, sans-serif; <br>
+              
+                { 
+        </code><br>
+        تمام &lt;h1&gt;, &lt;h2&gt; و  &lt;p&gt; از فونت Arial استفاده می‌کنند.
+    </p>
+    <strong>مثال ترکیبی</strong> <br>
+    <code>
+        /* پاراگراف‌های داخل مقاله */ <br>
+     } article > p  <br>
+      font-size: 16px; <br>
+     line-height: 1.5; <br>
+     { <br>
+
+     /* لینک‌های بعد از یک پاراگراف */ <br>
+     } p + a  <br>
+     color: blue; <br>
+     text-decoration: underline; <br>
+     {<br>
+
+     /* لینک‌های داخل منو */ <br>
+     } nav a  <br>
+     padding: 5px 10px;<br>
+     text-decoration: none; <br>
+     { <br>
+
+     /* همه عناصر هم‌سطح بعد از هدر */ <br>
+    } header ~ section  <br>
+        margin-top: 20px; <br>
+      {
+
+    </code>
+</body>
+</html>
