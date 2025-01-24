@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تگ ها و ویژگی ها</title>
+    <style>
+ @font-face {
+    font-family: vazirmatn;
+    src: url(/font/Vazirmatn-Medium.ttf);
+ }
+
+ body {
+    font-family: vazirmatn;
+    background-color: burlywood;
+    
+ }
+h1,h2,strong,b {
+    /* background-color: red; */
+    border: 2px solid brown;
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <h2>  حالتهای نوشتاری در کدنویسی</h2><br><br>
+    <b>Camel Case:</b>در این حالت فقط حروف اول کوچک است.<br>
+    <br>
+    <b>Paskal Case:</b> در این حالت تمام حروف اول کلمات بزرگ است<br>
+    <br>
+    <b>Kebab Case:</b>در این حالت بین حروف از  دش (-) استفاده میشود .<br>
+    <br>
+    <b>Snak Case:</b>دراین حالت بین حروف از آندرلاین(_) استفاده میشود. <br>
+    <br>
+<br>
+    <h2>آشنایی با تگ ها در HTML:</h2><br>
+    <br>
+        <b>
+            تگ های &lt;h1&gt; الی &lt;h6&gt;:</b>
+            <div>
+            <br>
+
+                تگهای که برای heding و عنوان محتواست
+                از h1الیh6 ارزشش کمتر میشه. زبان HTML زبان معناگرایی است که هر 
+                تگ خلاصه یک اسمی است. تگ h1 فقط درونش متن میپذیره و پاراگراف نمی پذیره.
+         
+            <b> تگ &lt;p&gt; &lt;/p&gt;:</b><br>
+            <div>
+                این تگ پاراگراف است .
+            </div><br>
+            <b> تگ &lt; br&gt;:</b><br>
+            <br>
+            <div>
+                این تگ یک تگ مفرد است و برای شکستن خط استفاده می شود. <br>
+            </div><br>
+            <b> تگ &lt;pre&gt; &lt;/pre&gt;:</b><br>
+            <br>
+            <div>
+                این تگ مخفف Preformatted texاست که درآن
+                متن را فرمت دهی میشود و هر متنی وارد شود به همان صورت نمایش داده
+                می شودو در این تگ به دلیل فرمت دهی شده مجاز به استفاده تگ دیگری نمی باشیم.
+            </div><br>
+            <b> کامنت گذاری:</b><br>
+            <br>
+            <div>
+                کامنت به معنی قطعه کدی است که اجرا نمی شود و برای 
+                توضیحات بیشتر در ج می شود نحوه کامنت گذاری در HTML به صورت
+                زیر می باشد<br>
+                <br>
+                <b>&lt;--متن و توضیح مورد نظر!--&gt;</b>
+            </div><br>
+            <br>
+            <b> تگ &lt;b&gt; &lt;/b&gt;:</b><br>
+            <br>
+            <div>
+             این تگ نوشته و متن ها را بولد میکند.
+            </div><br>
+            <br>
+            <b> تگ &lt;i&gt; &lt;/i&gt;:</b><br>
+            <br>
+            <div>
+                این تک نوشته و متن های ما را ایتالیک(مورب) می کند. 
+            </div><br>
+            <br>
+            <b> تگ &lt;del&gt; &lt;/del&gt;:</b><br>
+            <br>
+            <div>
+        برای خط زدن یا خط انداختن متن و کلمات استفاده می شود و تگ برعکس آن 
+                <b> تگ &lt;ins&gt; &lt;/ins&gt;</b>می باشد. 
+            </div><br>
+            <br>
+            <b> تگ &lt;abbr&gt; &lt;/abbr&gt;:</b><br>
+            <br>
+            <div>
+                از این تگ برای تعریف اختصارات وقتی موس روی بخشی قرار میگیره استفاده می 
+                شود.
+            </div><br>
+            <br>
+            <b> تگ &lt;mark&gt; &lt;/mark&gt;:</b><br>
+            <br>
+            <div>
+                این تگ برای هایلات و مارک کردن یه بخش یا یک رشته 
+                استفاده می شود.
+            </div><br>
+            <br>
+            <b> تگ &lt;small&gt; &lt;/small&gt;:</b><br>
+            <br>
+            <div>
+                این تگ برای کوچک کردن یک خط یا حتی یک کلمه
+                استفاده می شود.
+            </div><br>
+            <br>
+            <b> تگ &lt;sup&gt; &lt;/sup&gt;:</b><br>
+            <br>
+            <div>
+                تگ برای زمانی است که می خواهیم متن به صورت بالانویس نمایش داده شود 
+                و بیشتر در معادلات ریاضی، توان ها و نمادها استفاده می شود.
+            </div><br>
+            <br>
+            <b> تگ &lt;sub&gt; &lt;/sub&gt;:</b><br>
+            <br>
+            <div>
+                تگ برای زمانی است که می خواهیم متن به صورت پایین نویس نمایش داده شود 
+                و بیشتر در معادلات ریاضی، توان ها و نمادها استفاده می شود.
+            </div>
+            
+              <code> مثال تگ های بالا [x<sub>4</sub>+log<sup>2</sup>]</code><br>
+              <br>
+              <b> تگ &lt;ul&gt; &lt;/ul&gt;:</b><br>
+              <br>
+            <div>
+                 تگی است که برای ایجاد یک لیست نامرتب از آن استفاده می شود و یک تگ دیگر بنام 
+                 &lt;li&gt; &lt;/li&gt; را درون خود دارد
+        </div><br>
+        <br>
+        <b> تگ &lt;ol&gt; &lt;/ol&gt;:</b><br>
+        <br>
+        <div>
+               تگی است برای ایجاد یک لیست مرتب از آن استفاده میشود و مانند تگ ul تگ li 
+               را درون خود دارد. این تگ یک ویژگی بنام typ به خودش 
+               میگیره که میتونیم مقدار اعداد و حروف رو مشخص کنیم.
+        </div>
+        <code>
+            <ul>
+                <li>example1</li>
+                <li>example2</li>
+                <li>example3</li>
+                
+                <ol type="A">
+                <li>example1</li>
+                <li>example2</li>
+                <li>example3</li>
+                </ol>
+            </ul>
+        </code>
+        <br>
+        <b> تگ &lt;hr&gt;:</b><br>
+        <br>
+        <div>
+            یک تگ مفرد است که برای انداختن یک خط عمودی کامل بین بخش های صفحه استفاده میشود. 
+        </div><br>
+            <br>
+            <h2> تگهای معناگرا در HTML:</h2><br>
+            <br>
+            <b> تگ &lt;strong&gt; &lt;/strong&gt; و &lt;em&gt; &lt;/em&gt;:</b><br>
+            <br>
+            <div>
+                این تگها، تگهای معنا گرایی است که برای موتورهای جستجو 
+                و ابزارهای صفحه خوان است. 
+                تگ &lt;b&gt; معنی خاصی برای موتور جستجو ندارد ولی وقتی از تگ &lt;strong&gt;
+                استفاده می شود همان کار بولد کردن را انجام میدهد ولی موتور جستجو 
+                متوجه می شود این عبارت یک عبارت کلیدی در صفحه
+                است که اهمیت دارد. و جزو کلمات کلیدی صفحه در نظر می گرید. 
+                و یا تگ &lt;em&gt; کار تگ &lt;i&gt; را انجام میدهد و در ظاهر تفاوتی ندارد
+                ولی عبارت شما را برای موتور جستجو تاکیدی می کند. 
+            </div><br>
+            <br>
+           
+            <h2>ویژگی ها(ATTRIBUT):</h2><br>
+            <br>
+            <br>
+             <div>
+                تگ ها معمولا یک ویژگی به خود می گیرند که ATTRIBUT نام دارد
+                که با گرفتن این ویژگی ها قابلیتی به تگ
+             اضافه می شود
+              و این ویژگی ها دو حالت دارند یا مقدار دارند و یا بی مقدار هستند
+                 
+              </div>
+              <pre>
+                &lt;"مقدار مد نظر":tag ATTRIBUT name&gt; که این یک ویژگی است که مقدار پذیر است
+                &lt;tag ATTRIBUT name&gt; که این یک ویژگی است که بی مقداراست
+              </pre>
+              <strong>Attribut lang:</strong><br>
+    <br>
+    <div>
+        در HTML برای مشخص کردن زبان محتوای یک عنصر استفاده می‌شود.
+         این ویژگی به مرورگرها، موتورهای جستجو، 
+         و ابزارهای کمکی مانند صفحه‌خوان‌ها کمک می‌کند تا محتوا را بهتر پردازش کنند.
+    </div><br>
+    <strong>Attribut dir:</strong><br>
+    <br>
+    <div>
+        ویژگی dir در HTML برای تعیین جهت متن استفاده می‌شود. 
+        این ویژگی به مرورگر می‌گوید که محتوای یک عنصر باید از چپ به راست (LTR) یا از راست به چپ 
+        (RTL) نمایش داده شود. 
+    </div><br>
+    <strong>Tage Meta:</strong><br>
+    <br>
+    <div>
+        تگ &lt;meta&gt; در HTML برای تعریف اطلاعات متا (Metadata) درباره‌ی صفحه وب استفاده می‌شود. 
+        این
+         اطلاعات برای مرورگرها، موتورهای جستجو و سایر سرویس‌ها به‌کار می‌رود و
+          شامل توضیحات، کدگذاری کاراکترها، تنظیمات ویوپورت و موارد دیگر است. تگ‌های 
+          &lt;meta&gt; معمولاً در بخش &lt;head&gt; 
+          قرار می‌گیرند.
+    </div><br>
+    <strong> Tage Meta Charset:</strong><br>
+    <br>
+    <div>
+        تگ &lt;meta charset&gt; برای تعریف نوع کدگذاری کاراکترها 
+        (Character Encoding) استفاده می‌شود. این تگ به مرورگر می‌گوید که چگونه کاراکترهای موجود در صفحه را تفسیر کند.
+         استفاده صحیح از این تگ برای نمایش درست محتوای متنی، به‌ویژه برای زبان‌هایی با کاراکترهای خاص مثل فارسی، عربی، چینی و غیره، ضروری است. <br>
+         <code>
+            &lt;meta charset="UTF-8"&gt;
+        </code><br>
+        رایج ترین و پرکاربردترین کد گذاری utf-8 است. 
+        زیرااز تمام زبان‌ها (مانند فارسی، عربی، انگلیسی، چینی و ...) پشتیبانی می‌کند.
+    </div><br>
+    <strong> Tage meta viewport:</strong><br>
+    <br>
+    <div>
+         تگ &lt;meta name="viewport"&gt;در HTML برای تنظیم نحوه نمایش صفحه وب در دستگاه‌های مختلف استفاده می‌شود.
+        این تگ به‌ویژه برای طراحی وب‌سایت‌های ریسپانسیو (Responsive) که در موبایل و دسکتاپ به‌درستی نمایش داده می‌شوند، 
+        ضروری است. <br>
+       <code>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+       </code>
+    </div><br>
+    <strong> Tage dl:</strong><br>
+    <br>
+    <div>
+        تگ &lt;dl&gt; در HTML برای ایجاد یک لیست توضیحی یا لیست تعریف‌ها (Definition List) استفاده می‌شود. 
+        این نوع لیست معمولاً شامل مجموعه‌ای از اصطلاحات و توضیحات مربوط به آن‌ها است.
+        تگ &lt;dl&gt; به همراه تگ‌های زیر استفاده می‌شود: <br>
+       1- &lt;dt&gt; : برای تعریف یک اصطلاح یا عنوان.مخفف(Definition Term) <br>
+       2-&lt;dd&gt;: برای ارائه توضیحات یا شرح مربوط به اصطلاح.مخفف (Definition Description) <br>
+       <code>
+        &lt;dl&gt;<br>
+            &lt;dt&gt;HTML&lt;/dt&gt;<br>
+            &lt;dd&gt;یک زبان نشانه‌گذاری برای طراحی صفحات وب.&lt;/dd&gt;<br>
+            &lt;dl/&gt;<br>    
+       </code>
+    </div><br>
+    <strong> Tage q & blockquote:</strong><br>
+    <br>
+    <div>
+        تگ &lt;q&gt;برای نقل قول‌های کوتاه استفاده می‌شود که درون خط متن قرار دارند.
+        تگ &lt;blockquote&gt;برای نقل قول‌های طولانی استفاده می‌شود که معمولاً به صورت جداگانه در صفحه نمایش داده می‌شوند. <br>
+        ویژگی‌های مهم: <br>
+     مرورگرها به‌طور پیش‌فرض نقل قول‌ها را درون علامت نقل قول ("") قرار می‌دهند. <br>
+     می‌توان از ویژگی cite برای منبع نقل قول استفاده کرد. <br>
+     <code>
+        &lt;blockquote cite="https://example.com/quotes"&gt;<br>
+        هر چالشی فرصتی برای یادگیری است. <br>
+        &lt;blockquote/&gt;<br>
+        &lt;p&gt;<br>
+        او گفت: <br>
+        &lt;q cite="https://example.com/quotes"&gt;<br>
+        تلاش کلید موفقیت است. <br>
+        &lt;q/&gt;<br>
+        &lt;p/&gt;
+     </code>
+    </div><br>
+    <strong> Tage a:</strong><br>
+    <br>
+    <div>
+        تگ &lt;a&gt; در HTML مخفف "anchor" است
+        و برای ایجاد لینک‌های هایپرمتنی (hyperlinks) استفاده می‌شود.
+        این تگ به کاربران امکان می‌دهد به صفحه دیگری، بخشی از همان صفحه، یا یک فایل خارجی منتقل شوند. <br>
+        ویژگی‌های رایج: <br>
+        1-href (Hypertext Reference): آدرس مقصد لینک. <br>
+        <code>
+            &lt;a href="https://example.com"&gt;<br>
+            بازدید از <br>
+            &lt;a/&gt;
+        </code><br>
+        2-target: نحوه باز شدن لینک را تعیین می‌کند. <br>
+        _self (پیش‌فرض): باز شدن در همان تب. <br>
+        _blank: باز شدن در تب جدید. <br>
+        <code>
+        &lt;a href="https://example.com" target="_blank"&gt; <br>
+        بازکردن در تب جدید <br>
+        &lt;a/&gt;
+        </code><br>
+        3-rel: تعریف رابطه بین صفحه فعلی و مقصد لینک. <br>
+        -nofollow: به موتورهای جستجو می‌گوید لینک را دنبال نکنند. <br>
+        -noopener یا noreferrer: جلوگیری از ارسال اطلاعات اضافی به مقصد. <br>
+        <code>
+            &lt;a href="https://example.com" rel="nofollow"&gt; <br>
+            لینک نوفالو<br>
+         &lt;a/&gt;
+        </code><br>
+        4-title: متنی که هنگام قرار دادن نشانگر روی لینک نمایش داده می‌شود. <br>
+        <code>
+            &lt; "a href="bttps://example.com" title="bazdid sait&gt;<br>
+                لینک با توضیح<br>
+                &lt;a/&gt;
+        </code>
+    </div><br>
+    <strong> Tage img:</strong><br>
+    <br>
+    <div>
+        تگ &lt;img&gt; در HTML برای نمایش تصاویر استفاده می‌شود.
+        این تگ یک عنصر تک‌پایانی است، یعنی به تگ بسته نیازی ندارد. <br>
+        ویژگی‌های مهم: <br>
+        1-src (Source): مسیر یا آدرس تصویر. <br>
+        2-alt (Alternative Text):توضیحات جایگزین در صورتی که تصویر بارگذاری نشود 
+          استفاده از این ویژگی برای دسترس‌پذیری و سئو مهم است. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="in yek nemome ast&gt;
+        </code><br>
+        3-width و height: تنظیم عرض و ارتفاع تصویر به پیکسل یا درصد. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="in yek tasvire nemone ast" width="200" height="150&gt;
+        </code><br>
+        4-title: متنی که هنگام قرار گرفتن نشانگر ماوس روی تصویر نمایش داده می‌شود. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="pic" title="in tek tasvir ast&gt;
+        </code><br>
+        5-loading: برای بارگذاری تنبل (Lazy Loading) استفاده می‌شود. <br>
+        -lazy: تصویر تنها زمانی بارگذاری می‌شود که در دید کاربر قرار گیرد. <br>
+        -eager: تصویر فوراً بارگذاری می‌شود. <br>
+        <code>
+            &lt;"img src="image.jpg" alt="pic" loading="lazy&gt;
+        </code><br>
+        6-style: افزودن استایل مستقیم به تصویر. <br>
+        <code>
+            &lt;"img src="image.jpg"  style="border-radius: 10px&gt;
+        </code>
+
+    </div>
+    <br>
+
+    <strong>Display:</strong><br>
+    <br>
+    <div>
+        در HTML، به ویژگی display اشاره دارد که مشخص می‌کند
+        یک عنصر HTML چگونه در صفحه نمایش داده شود. این ویژگی به شما امکان می‌دهد نحوه‌ی نمایش عناصر را تغییر دهید.
+    </div><br>
+    <br>
+    <strong>مقادیر متداول display در HTML:</strong><br>
+    <br>
+    <div>
+        <br>
+        <b>1)block: </b><br>
+        <br>
+        این مقدار باعث می‌شود که عنصر به صورت یک بلوک نمایش داده شود.
+         یعنی از ابتدا تا انتها یک خط جدید را اشغال می‌کند. <br>
+         <code>
+            &lt;"div style="display: block"&gt;<br>
+           in yek onsor bolock ast <br>
+            &lt;div/&gt;
+         </code><br>
+         <br>
+         <b>2)inline:</b><br>
+         <br>
+         این مقدار باعث می‌شود که عنصر به صورت درون‌خطی نمایش داده شود. 
+         یعنی فقط به اندازه محتوای خود فضا اشغال می‌کند و در همان خط دیگر عناصر قرار می‌گیرد. <br>
+         <code>
+            &lt;"span style="display: inline"&gt;<br>
+            in yek onsor daron khati ast <br>
+             &lt;span/&gt;
+         </code><br>
+         <br>
+         <b>3)inline-block:</b><br>
+         <br>
+         ترکیبی از block و inline. یعنی عنصر مانند یک بلوک رفتار می‌کند
+         اما درون‌خطی نمایش داده می‌شود. <br>
+         <code>
+            &lt;"div style="display: inline-block&gt; <br>
+            in yek onsor block-iniline ast <br>
+         &lt;div/&gt;
+         </code><br>
+         <br>
+         <b>4)none:</b>
+         <br>
+         <br>
+         این مقدار باعث می‌شود که عنصر کاملاً از صفحه حذف شود و فضای آن نادیده گرفته شود. <br>
+         <code>
+            &lt;"div style="display: none&gt;<br>
+            in onsor be hichvajh namayesh dade nemishavad <br>
+            &lt;div/&gt;
+         </code><br>
+         <br>
+         <b>5)flex:</b><br>
+         <br>
+         برای طراحی با استفاده از Flexbox. این ویژگی به شما امکان می‌دهد
+         که عناصر در یک ردیف یا ستون بچینید و با تنظیمات مختلف کنترل کنید. <br>
+         <code>
+            &lt;"div style="display: flex&gt; <br>
+            &lt;div&gt; onsor 1 &lt;div/&gt; <br>
+            &lt;div&gt; onser 2 &lt;div/&gt; <br>
+            &lt;div/&gt;
+         </code>
+    </div><br>
+    
+    <br><br>
+    <strong>Tage details:</strong><br>
+    <br>
+    <div>
+        تگ &lt;details&gt; در HTML برای ایجاد یک بخش قابل گسترش 
+        و قابل جمع شدن (expandable/collapsible) استفاده می‌شود.
+        این تگ به شما این امکان را می‌دهد که محتوای اضافی را در یک بخش مخفی نگه دارید
+         و کاربر با کلیک بر روی عنوان آن محتوا را مشاهده کند
+         معمولاً برای نمایش اطلاعات اضافی، سؤالات متداول (FAQ)،
+         یا توضیحات بیشتر به کار می‌رود که می‌خواهید کاربر به اختیار خودش آن‌ها را مشاهده کند.
+         <br>
+         تگ &lt;details&gt; معمولاً با تگ &lt;summary&gt; استفاده می‌شود که عنوان بخش گسترش‌پذیر را مشخص می‌کند. <br>
+         <code>
+              &lt;details&gt; <br>
+              &lt;summary&gt; onvan &lt;summary/&gt; <br>
+              &lt;p&gt; in matn be sorat makhfi ast va ba click roye onvan namayesh dade mishavad &lt;p/&gt;<br>
+              &lt;details/&gt;
+         </code>
+    </div><br><br>
+    <strong>Tage video: </strong><br>
+    <br>
+    <div>
+        تگ &lt;video&gt; در HTML برای جاسازی و پخش ویدئو در یک صفحه وب استفاده می‌شود. 
+        این تگ به شما امکان می‌دهد که ویدئوهای مختلف را به راحتی در وب‌سایت
+        خود نمایش دهید، بدون نیاز به پخش‌کننده‌های خارجی. <br>
+        -width و height: ابعاد ویدئو را مشخص می‌کنند. <br>
+        -controls:این ویژگی کنترل‌های پخش (پخش، توقف، میزان صدا و ...) را نمایش می‌دهد. <br>
+        -&lt;source&gt;: این تگ برای مشخص کردن منابع مختلف ویدئو (با فرمت‌های مختلف)
+        استفاده می‌شود. شمامی‌توانید چندین تگ &lt;source&gt; با فرمت‌های مختلف داشته باشید
+        تا ویدئو در مرورگرهای مختلف به درستی پخش شود. <br>
+        <code>
+             &lt;video width="640" height="360" controls&gt; <br>
+             &lt;source src="video.mp4" type="video/mp4"&gt; <br>
+              morogar ashoma az paksh video poshtbani nemikonad <br> 
+                &lt;/video&gt;
+        </code>
+    </div><br><br>
+    <strong>Tage audio: </strong><br>
+    <br>
+    <div>
+        تگ &lt;audio&gt;در HTML برای جاسازی و پخش فایل‌های صوتی استفاده می‌شود. <br>
+        <code>
+            &lt;audio controls&gt;<br>
+            &lt;source src="audio.mp3" type="audio/mp3"&gt;<br>
+            morogar ashoma az paksh file soti poshtbani nemikonad <br>
+                &lt;/audio&gt;
+        </code>
+    </div><br><br>
+    <strong>Tage iframe: </strong><br>
+    <br>
+    <div>
+        تگ &lt;iframe&gt; در HTML برای جاسازی محتوای وب
+        از یک منبع خارجی (یک صفحه وب یا دیگر منابع) در داخل
+        صفحه وب شما استفاده می‌شود. این تگ به شما اجازه می‌دهد
+        که محتوای یک صفحه وب دیگر را بدون ترک صفحه فعلی نمایش دهید.
+     <code>
+        &lt;iframe src="https://www.example.com" width="600" height="400"&gt;
+        &lt;/ifram&gt;
+     </code><br>
+     <br>
+     <b>ویژگی‌های تگ:</b> <br>
+     <br>
+     -src: این ویژگی آدرس URL صفحه‌ای است که می‌خواهید در داخل iframe نمایش داده شود <br>
+     -width و height: این ویژگی‌ها عرض و ارتفاع iframe را تعیین می‌کنند. <br>
+     -allowfullscreen: این ویژگی برای امکان فعال‌سازی حالت تمام صفحه برای محتوای داخل iframe است <br>
+     -sandbox: این ویژگی محدودیت‌هایی را برای iframe اعمال می‌کند
+     تا از حملات امنیتی جلوگیری کند. برای مثال، با تنظیم این ویژگی، می‌توانید اجرایی کردن اسکریپت‌ها یا ارسال فرم‌ها را محدود کنید. <br>
+
+
+
+    </div>
+   
+</body>
+</html>

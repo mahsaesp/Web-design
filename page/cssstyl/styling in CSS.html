@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling in css</title>
+    <style>
+ body {
+    background-color: #FEF9E1;
+    /* color: #6D2323; */
+    font-family: Arial, Helvetica, sans-serif;
+ }
+code {
+    color: #A31D1D;
+}
+
+
+
+
+
+table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    th {
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      font-size: 16px;
+      line-height: 50px;
+      height: 50px;
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    .item {
+      display: inline-block;
+      vertical-align: inherit; /* به‌صورت پویا مقدار vertical-align را می‌پذیرد */
+    }
+
+    .baseline { vertical-align: baseline; }
+    .top { vertical-align: top; }
+    .middle { vertical-align: middle; }
+    .bottom { vertical-align: bottom; }
+    .text-top { vertical-align: text-top; }
+    .text-bottom { vertical-align: text-bottom; }
+    .sub { vertical-align: sub; }
+    .super { vertical-align: super; }
+
+    </style>
+</head>
+<body>
+    <div>
+  <strong>text-decoration:</strong>  
+  <p>
+    ویژگی text-decoration در CSS برای اضافه کردن یا تغییر استایل تزئینات متن استفاده می‌شود. 
+    این ویژگی معمولاً برای مواردی مانند زیر خط بردن متن، 
+    خط زدن متن، یا حتی حذف خط زیر لینک‌ها به کار می‌رود.
+  </p>
+</div> <br>
+<div>
+    <strong>مقادیر پرکاربرد text-decoration:</strong>
+    <p>
+        <b>1.none:</b>هیچ تزئینی روی متن اعمال نمی‌شود. <br>
+        <br>
+        <code>
+        } a  <br>
+        /* خط زیر لینک حذف می‌شود */   ;text-decoration: none  <br>
+                {  
+              
+        </code><br> 
+        <br>
+        <b>2.underline:</b> خط زیر متن. <br>
+        <br>
+        <code>
+        } a  <br>
+        /*خط زیر متن پاراگراف*/   ;text-decoration: underline  <br>
+                {  
+               
+        </code><br>
+        <br>
+        <b>3.overline:</b>خط بالای متن. <br>
+        <br>
+        <code>
+        } h  <br>
+        /*خط بالای عنوان*/   ;text-decoration: overline  <br>
+                {  
+               
+        </code><br>
+        <br>
+        <b>4.line-through:</b>خط روی متن (برای نمایش متن خط‌خورده). <br>
+        <br>
+        <code>
+        } del  <br>
+        /*نمایش متن حذف‌شده*/   ;text-decoration: line-through  <br>
+                {   
+        </code><br>
+        <br>
+        <b>5.underline overline:</b>خط بالا و پایین متن. <br>
+        <br>
+        <code>
+        } h2  <br>
+           ;text-decoration: underline overline  <br>
+                {    
+        </code>
+    </p>
+</div>
+<div>
+    <strong>نکات:</strong><br>
+    <p>
+        برای کنترل دقیق‌تر، می‌توانید از زیرشاخه‌های این ویژگی استفاده کنید: <br>
+        text-decoration-line: نوع تزئین (مثل underline، overline). <br>
+        text-decoration-color: رنگ تزئین. <br>
+        text-decoration-style: استایل خط (مثل solid، dashed، wavy).
+    </p>
+</div>
+<div>
+    <strong>text-align:</strong>
+    <p>
+        ویژگی text-align در CSS برای تعیین نحوه تراز کردن متن 
+        در داخل یک عنصر استفاده می‌شود. این ویژگی به
+        شما امکان می‌دهد متن را به چپ، راست، وسط یا به صورت هم‌تراز (justified) تنظیم کنید.
+    </p>
+</div><br>
+<div>
+    <strong>مقادیر رایج text-align:</strong> <br>
+    <p>
+        <b>1.left:</b>تراز متن به سمت چپ (حالت پیش‌فرض در زبان‌های چپ‌چین مانند انگلیسی). <br>
+       <br>
+       <code>
+       } p <br>
+           ; text-align: left<br>
+            {
+       </code> <br>
+    </p>
+    <p>
+        <b>2.right:</b>تراز متن به سمت راست (مناسب برای زبان‌های راست‌چین مانند فارسی و عربی). <br>
+        <br>
+        <code>
+             } p <br>
+                ;text-align: right <br>
+                { 
+        </code><br>
+    </p>
+  <p>
+    <div>
+   <b>3.center:</b>تراز متن به مرکز. <br>
+   <br>
+   <code>
+      }   h1 <br>
+     ; text-align: center <br>
+        {
+   </code><br>
+  </p>
+  </div>
+  <div>
+    <p>
+    <strong>4.justify:</strong>متن به صورت کامل هم‌تراز می‌شود (کشیده شدن متن از هر دو طرف). <br>
+    <br>
+    <code>
+         }  p <br>
+           ; text-align: justify <br>
+            {
+          
+    </code>
+    </p>
+  </div>
+  <div>
+    <p>
+        <strong>5.start:</strong>متن را مطابق با جهت زبان (LTR یا RTL) تراز می‌کند.
+        برای زبان‌های چپ‌چین مثل انگلیسی، معادل left است.
+        برای زبان‌های راست‌چین مثل فارسی، معادل right است. <br>
+        <br>
+        <code>
+              }  p  <br>
+               ; text-align: start <br>
+                {
+              
+        </code>
+    </p>
+  </div>
+  <div>
+    <p>
+        <strong>6.end:</strong>متن را از انتهای زبان (LTR یا RTL) تراز می‌کند.
+        برای زبان‌های چپ‌چین معادل right و برای زبان‌های راست‌چین معادل left است. <br>
+        <br>
+        <code>
+             }  p <br>
+                ;text-align: end <br>
+                {
+              
+        </code>
+    </p>
+  </div>
+  <div>
+    <strong>نکات:</strong>
+    <p>
+        برای زبان‌های راست‌چین مثل فارسی، حتماً از ویژگی direction: rtl استفاده کنید تا رفتار صحیحی 
+        داشته باشید. <br>
+        ویژگی text-align فقط بر محتوای درون یک عنصر تأثیر می‌گذارد، نه خود عنصر. <br>
+    </p>
+  </div>
+</div>
+   <div>
+    <strong>line-height:</strong>
+    <p>
+        ویژگی line-height در CSS برای تنظیم فاصله بین خطوط متن در یک عنصر استفاده می‌شود. این ویژگی
+        می‌تواند به متن ظاهر مرتب‌تری بدهد و خوانایی آن را افزایش دهد.
+    </p>
+   </div> 
+   <div>
+    <strong>مقادیر قابل قبول line-height:</strong>
+    <p>
+        <b>1.واحد عددی (number):</b>این مقدار یک ضریب بدون واحد است که بر اندازه فونت ضرب می‌شود. <br>
+        <br>
+        <code>
+              } p <br>
+               ; font-size: 16px <br>
+               /* فاصله خطوط 1.5 برابر اندازه فونت است */;line-height: 1.5 <br>
+                {
+              
+        </code>
+    </p>
+   </div>
+   <div>
+   <b>2.واحد نسبی یا مطلق (px, em, %, rem):</b>شما می‌توانید فاصله خطوط را با واحد مشخصی تنظیم کنید. <br>
+   <br>
+   <code>
+       }p  <br>
+       /* فاصله خطوط دقیقاً 24 پیکسل است */ ;line-height: 24px  <br>
+        { <br>
+      
+        }h1  <br>
+        /* فاصله خطوط 150 درصد اندازه فونت است */ ;line-height: 150% <br>
+        {
+   </code>
+   </div> <br>
+   <div>
+    <b>3.normal:</b>مقدار پیش‌فرض مرورگر برای فاصله خطوط، که معمولاً بسته به فونت و اندازه متن متغیر است. <br>
+    <br>
+    <code>
+         } p <br>
+            ;line-height: normal <br>
+            {
+          
+    </code>
+   </div> <br>
+   <div>
+    <strong>نکات مهم:</strong>
+    <p>
+        مقدار عددی (بدون واحد) معمولاً ترجیح داده می‌شود، زیرا با تغییر اندازه فونت، فاصله خطوط
+        نیز متناسب تغییر می‌کند. <br>
+        مقدار خط باید به اندازه کافی بزرگ باشد تا متن خوانا باشد، 
+        اما نه آنقدر بزرگ که پراکندگی بیش از حد ایجاد کند.
+    </p>
+   </div>
+   <div>
+    <strong>overflow:</strong>
+    <p>
+        ویژگی overflow در CSS برای تعیین نحوه نمایش محتوا در صورتی که
+        از محدوده عنصر (Container) خارج
+        شود، استفاده می‌شود. این ویژگی مشخص می‌کند که
+        آیا محتوای اضافی باید پنهان شود، اسکرول‌بار داشته
+        باشد یا به حالت پیش‌فرض نمایش داده شود.
+    </p>
+   </div>
+   <div>
+    <strong>مقادیر قابل قبول overflow:</strong>
+   </div>
+   <br>
+   <div>
+    <b>1.visible (پیش‌فرض):</b>محتوا بدون هیچ محدودیتی نمایش داده می‌شود و از محدوده عنصر خارج می‌شود. <br>
+    <br>
+    <code>
+           } div <br>
+           ; overflow: visible <br>
+            {
+           
+    </code>
+   </div><br>
+   <div>
+    <b>2.hidden:</b>محتوای اضافی مخفی می‌شود و قابل مشاهده نیست. <br>
+    <br>
+    <code>
+          }div <br>
+           ; overflow: hidden <br>
+            {
+          
+    </code>
+   </div><br>
+   <div>
+    <b>3.scroll:</b>اسکرول‌بار افقی و عمودی اضافه می‌شود، حتی اگر محتوای اضافی وجود نداشته باشد. <br>
+    <br>
+    <code>
+         } div <br>
+           ; overflow: scroll <br>
+            {
+          
+    </code>
+   </div><br>
+   <div>
+    <b>4.auto:</b>اسکرول‌بار فقط در صورت نیاز (زمانی که محتوا از محدوده عنصر خارج شود) اضافه می‌شود. <br>
+    <br>
+    <code>
+         } div 
+           ;overflow: auto
+            {
+          
+    </code>
+   </div><br>
+   <div>
+    <strong>نکات:</strong>
+    <p>
+        overflow-y و overflow-x ویژگی است که برای کنترل نوار اسکرول‌
+        افقی و عمودی به طور جداگانه استفاده می شود
+        اگر از hidden استفاده کنید محتوای 
+        اضافی از دید خارج می شود و هیچ اسکرولی 
+        ظاهر نمی شود.
+    </p>
+   </div><br>
+   <div>
+    <strong>max-width:</strong>
+    <p>
+        ویژگی max-width در CSS برای تعیین حداکثر عرض یک عنصر استفاده می‌شود.
+        این ویژگی باعث می‌شود که
+        عرض عنصر از مقدار تعیین‌شده فراتر نرود، حتی اگر محتوای داخل عنصر بزرگ‌تر باشد.
+    </p><br>
+    <strong>مقادیر قابل قبول max-width:</strong><br>
+    <p>
+        <b>1.واحدهای طول (px, %, em, rem, vh, vw):</b>
+        عرض حداکثر با استفاده از واحدهای مشخص تنظیم می‌شود
+    </p> 
+    <code>
+         }div  <br>
+         /* حداکثر عرض عنصر 600 پیکسل است */  ;max-width: 600px <br>
+         {
+          
+    </code><br>
+    <p>
+        <b>2.none:</b>هیچ محدودیتی برای عرض عنصر وجود ندارد. 
+    </p>
+    <code>
+         }div <br>
+            ;max-width: none <br>
+            {
+           
+    </code><br>
+    <p>
+        <b>3.نسبت به والد یا viewport:</b>
+        می‌توانید از واحدهای درصد یا نسبی استفاده کنید:
+    </p>
+    <code>
+          } div 
+          /* حداکثر عرض 80٪ از عرض والد */ ;max-width: 80%
+            {
+          
+    </code>
+    <p>
+        <strong>نکات:</strong> <br>
+        استفاده از max-width به جای width در طراحی
+         وب واکنش‌گرا (Responsive) توصیه می‌شود. <br>
+         این ویژگی می‌تواند با min-width ترکیب شود تا محدوده عرض یک عنصر را تعیین کنید.
+
+    </p>
+   </div>
+  <div>
+    <strong>vertical-align:</strong> 
+    <p>
+        ویژگی vertical-align در CSS برای تعیین نحوه تراز عمودی یک عنصر استفاده می‌شود. 
+        این ویژگی معمولاً برای تراز کردن متن، تصاویر یا سایر عناصر درون 
+        یک عنصر inline، inline-block، یا یک سلول جدول به کار می‌رود.
+
+    </p>
+  </div>
+  <div>
+    <strong>مقادیر رایج vertical-align:</strong>
+  </div> <br>
+  <div>
+    <b>1.ترازهای کلمه‌کلیدی (keyword values):</b>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>تراز کلمه‌کلیدی</th>
+        <th>توضیحات</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>baseline</td>
+        <td>تراز متن با خط پایه (پیش‌فرض)</td>
+      
+      </tr>
+      <tr>
+        <td>top</td>
+        <td>تراز متن با بالای خط والد</td>
+        
+      </tr>
+      <tr>
+        <td>middle</td>
+        <td>تراز متن با مرکز ارتفاع خط</td>
+       
+      </tr>
+      <tr>
+        <td>bottom</td>
+        <td>تراز متن با پایین خط والد</td>
+      </tr>
+      <tr>
+        <td>text-top</td>
+        <td>تراز متن با بالای متن در خط والد</td>
+      </tr>
+      <tr>
+        <td>text-bottom</td>
+        <td>تراز متن با پایین متن در خط والد</td>
+      </tr>
+      <tr>
+        <td>sub</td>
+        <td>تراز متن به صورت زیرنویس (subscript)</td>
+      </tr>
+      <tr>
+        <td>super</td>
+        <td>تراز متن به صورت بالانویس (superscript)</td>
+      </tr>
+    </tbody>
+  </table><br>
+  <div>
+    <p>
+        <b>2.مقادیر عددی یا نسبی:</b>
+        می‌توانید از مقادیر طول (مانند px, em, %) برای تغییر موقعیت عنصر نسبت به خط پایه استفاده کنید
+
+    </p>
+    <code>
+          } span <br>
+          /* 10px بالاتر از خط پایه */ ;vertical-align: 10px  <br>
+            { 
+          
+    </code>
+  </div><br>
+  <div>
+    <strong>نکات:</strong><br>
+    <p>
+        فقط برای عناصر inline یا table-cell کار می‌کند. اگر عنصر
+        شما block باشد، ابتدا باید آن را به inline-
+        block تغییر دهید  <br>
+        این ویژگی روی متن و عناصر inline داخل خط تأثیر دارد،
+        اما برای تراز عمودی کل یک باکس باید از ترکیب
+        flexbox یا grid استفاده کنید.
+    </p>
+  </div><br>
+  <div>
+    <strong> font-family:</strong>
+    <p>
+        ویژگی font-family در CSS برای تعیین نوع فونت متن در یک عنصر 
+        استفاده می‌شود. این ویژگی به شما
+        امکان می‌دهد یک یا چند فونت را برای متن مشخص کنید.
+        مرورگر ابتدا فونت اول را امتحان می‌کند و اگر در
+        دسترس نبود، به سراغ فونت‌های بعدی می‌رود.
+    </p>
+    <code>
+         } selector  <br>
+            ;font-family: "Font 1", "Font 2", generic-family <br>
+            {
+    </code>
+  </div><br>
+  <div>
+    <strong>نکات:</strong>
+    <p>
+        همیشه از فونت‌های جایگزین (Fallback) استفاده کنید. <br>
+        استفاده از فونت‌های Web Safe (مانند Arial یا Verdana) برای افزایش سازگاری توصیه می‌شود. <br>
+        برای فونت‌های سفارشی، مطمئن شوید که فرمت‌های مختلف فونت 
+        (مانند woff, ttf) را بارگذاری کنید تا با تمام مرورگرها 
+        سازگار باشد.
+    </p>
+  </div><br>
+  <div>
+    <strong>font-face@:</strong>
+    <p>
+        ویژگی font-face@ در CSS به شما این امکان را می‌دهد
+        که فونت‌های سفارشی را به وب‌سایت خود اضافه
+        کنید، حتی اگر آن فونت‌ها روی سیستم کاربر نصب نشده باشند.
+        این روش معمولاً برای بارگذاری فونت از یک فایل
+        محلی یا از یک سرویس وب فونت (مانند Google Fonts) استفاده می‌شود.
+    </p>
+    <strong>ساختار کلی font-face@:</strong> <br>
+    <br>
+    <code>
+          }  font-face@  <br>
+            /* نام دلخواه برای فونت */   ;font-family: "CustomFontName" <br>
+            /* مسیر و فرمت فونت */  ;src: url("path-to-font-file") format("font-format")  <br>
+            /* وزن فونت (اختیاری) */ ;font-weight: normal  <br>
+            /* استایل فونت (اختیاری) */ ;font-style: normal  <br>
+            {
+          
+    </code>
+  </div><br>
+  <div>
+    <strong>پارامترهای اصلی:</strong>
+  </div>
+  <p>
+    <b>1.font-family:</b>نامی که به فونت اختصاص می‌دهید و برای استفاده در CSS به آن ارجاع می‌کنید. <br>
+    <br>
+    <b>2.src:</b>مسیر فایل فونت. این مسیر می‌تواند محلی یا URL باشد: <br>
+    محلی: url("fonts/MyFont.woff2") <br>
+    آنلاین: url("https://example.com/fonts/MyFont.woff2") <br>
+    <br>
+    <b>3.format:</b>نوع فایل فونت (برای مرورگرها). مقادیر رایج: <br>
+    woff2 (فشرده و بهینه‌شده)/woff (نسخه قدیمی‌تر)/
+    truetype یا ttf/opentype یا otf/embedded-opentype یا eot/
+    svg (برای مرورگرهای قدیمی) <br>
+    <br>
+    <b>4.font-weight و font-style:</b>مشخص‌کننده وزن و استایل فونت (مانند عادی، بولد، ایتالیک). این مقادیر اختیاری هستند.
+  </p>
+
+  
+
+
+
+
+
+
+
+
+</body>
+</html>

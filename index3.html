@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستندات وب</title>
+<style>
+@font-face {
+    font-family:vazirmatn ;
+    src: url(font/Vazirmatn-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: vazirmatn;
+    background-color: #F0F0D7;
+
+}
+
+nav {
+    background-color: #727D73;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #F0F0D7;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh - 60px); */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background-color: #AAB99A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px #727D73;
+}
+
+.search-container input {
+ width: 70%;
+ padding: 10px;
+ font-size: 16px;
+ border: 2px solid #727D73;
+ border-radius: 5px;
+ padding-bottom: 20px;
+ outline: none;
+ background-color: #F0F0D7;
+
+
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #727D73;
+    color: #F0F0D7;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.search-container button:hover {
+    background-color: #D0DDD0;
+    color: #727D73;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    width: 100%;
+    max-width: 800px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+   
+}
+
+.box {
+    width: 30%;
+    background-color: #727D73;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px #AAB99A;
+    text-align: center;
+    justify-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.box:hover {
+   transform: scale(1.1);
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.box h3 {
+    margin-top: 10px;
+  margin-bottom: 10px;
+ font-size: 16px;
+   color:#F0F0D7;
+}
+
+
+.box p {
+ font-size: 14px;
+color: white;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+ 
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <nav>
+        <a href="page/Basic concepts/Basic concepts1.html">مبانی و اصول اولیه</a>
+        <a href="page/htmlstyl/Html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">SASS</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="search-container">
+         <input type="text" placeholder="جستجو کنید">
+         <button>جستجو</button>
+
+        </div>
+
+    </div>
+
+    <div class="boxes">
+        <div class="box">
+            <h3>HTML</h3>
+            <p>
+                (HyperText Markup Language) <br>
+                زبان نشانه‌گذاری استانداردی است که برای ایجاد و ساختاردهی صفحات
+                وب استفاده می‌شود.
+                این زبان به کمک تگ‌ها، بخش‌های مختلف یک صفحه وب مانند متن، تصاویر، لینک‌ها و جداول را تعریف می‌کند
+                HTML 
+                معمولاً همراه با
+                CSS و JavaScript
+                برای طراحی و عملکرد بهتر وب‌سایت‌ها استفاده می‌شود.
+            </p>
+        </div>
+            <div class="box">
+                <h3>CSS</h3>
+                <p>
+                    (Cascading Style Sheets) <br>
+                    یک زبان طراحی است که برای زیباتر کردن و استایل‌دهی به صفحات وب استفاده می‌شود.
+                    می‌توانید ظاهر و چیدمان عناصر  HTML 
+                    را با CSS تغییر دهید. 
+                    امکان تغییر رنگ‌ها، فونت‌ها، فاصله‌ها، اندازه‌ها، حاشیه‌ها و بسیاری از ویژگی‌های دیگر را فراهم می‌کند
+                    با استفاده از css می‌توانید صفحات وب را واکنش‌گرا
+                    (Responsive) کنید.
+                </p>
+
+            </div>
+
+            <div class="box">
+                <h3>SASS</h3>
+                <p>
+                    (SyntacticallyAwesomeStylesheets) <br>  
+                    یک پیش‌پردازنده‌ی css است
+                    که به شما اجازه می‌دهد کدهای CSS
+                    را به صورت ساختاریافته‌تر، قابل‌خواندن‌تر و قابل‌مدیریت‌تر بنویسید.
+                    با استفاده از sass
+                    می‌توانید از امکاناتی مانند متغیرها، توابع، تو در تو نوشتن کدها
+                    و ماژول‌ها استفاده کنید 
+
+
+
+                </p>
+
+            </div>
+
+        
+    </div>
+    
+</body>
+</html>
